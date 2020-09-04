@@ -1,0 +1,27 @@
+<%- include("partials/header") %>
+
+
+    <div class="scoreboard">
+        <h1 class="text-center">Scoreboard</h1>
+        <% if(score < 5){ %>
+            <p><%= currentPlayer %>, my grandma played this game and scored 5/10.</p>
+            <p> How the hell did you score <%= score %>/10?!</p>
+        <% }; %>
+        <% if(score >= 5 && score < 10){ %>
+            <p>Nice try, <%= currentPlayer %>. You scored <%= score %>/10.</p>
+            <p>But scoring 10/10 isn't exactly rocket science.</p>
+        <% }; %>
+        <% if(score === 10){ %>
+            <p>Wow! you scored <%= score %>/10. That is not a score i see very often.</p>
+            <p>You really know your football, <%= currentPlayer %>.</p>
+        <% }; %>
+        <div class="startButton">
+            <a href="/trivia/playagain">Play Again</a>
+        </div>
+        <div class="startButton">
+            <a href="/">End Game</a>
+        </div>
+    </div>
+
+
+<%- include("partials/footer") %>

@@ -1,0 +1,257 @@
+body {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://images.unsplash.com/photo-1508098682722-e99c43a406b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+    background-position: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar-dark {
+    padding: 0 10px;
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.landingHeader {
+    margin-top: 60px;
+    margin-bottom: 25px;
+    color: white;
+    font-family: 'Gayathri', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.ball-symbol .fa-futbol-o {
+    display: inline;
+    font-size: 47px;
+}
+
+.fa-futbol-o:first-of-type {
+    margin-right: 4px;
+}
+
+.landingForm {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.name {
+    height: 60px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.btn-lg {
+    height: 50px;
+}
+
+.scoreboard {
+    width: 40%;
+    margin: 50px auto;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 30px;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+
+.scoreboard p {
+    font-size: 25px;
+    font-weight: bolder;
+    color: #107896;
+    margin-bottom: 8px;
+}
+
+.scoreboard h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: #9a2617;
+    margin: 10px auto 17px auto;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #a3a2a2;
+}
+
+.startButton {
+    width: fit-content;
+    margin: 20px auto 10px auto;
+}
+
+.startButton a {
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 20px auto 10px auto;
+    background: #30a64f;
+    text-decoration: none;
+    color: white;
+}
+
+.startButton:nth-of-type(2) a {
+    background: #9a2617;
+    padding: 10px 23px;
+}
+
+.startButton a:hover {
+    color: white;
+    background: #3ac960;
+}
+
+.startButton:nth-of-type(2) a:hover {
+    background: #db3721;
+}
+
+
+.questionDash {
+    margin: 100px auto;
+    width: 70%;
+    color: black;
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+#option {
+    margin-left: 4px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .scoreboard h1 {
+        font-size: 40px;
+    }
+
+    .scoreboard p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .scoreboard h1 {
+        font-size: 30px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 663px) {
+    .scoreboard {
+        padding: 12px 22px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .scoreboard h1 {
+        font-size: 27px;
+    }
+
+    .scoreboard p {
+        font-size: 15px;
+    }
+
+    .landingHeader {
+        font-size: 45px;
+    }
+
+    .name {
+        font-size: 15px;
+    }
+
+    .btn-lg {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .scoreboard h1 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .scoreboard {
+        padding: 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .scoreboard h1 {
+        font-size: 17px;
+    }
+
+    .scoreboard p {
+        font-size: 12px;
+    }
+
+    .startButton a {
+        padding: 5px 8px;
+        font-size: 15px;
+    }
+
+    .startButton:nth-of-type(2) a {
+        padding: 5px 13px;
+        font-size: 15px;
+    }
+    
+    .landingHeader {
+        font-size: 35px;
+    }
+
+    .name {
+        font-size: 12px;
+        height: 50px;
+    }
+
+    .btn-lg {
+        font-size: 11px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .scoreboard h1 {
+        font-size: 15px;
+    }
+
+    .startButton a {
+        padding: 5px 4px;
+        font-size: 12px;
+    }
+
+    .startButton:nth-of-type(2) a {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    .name {
+        height: 40px;
+    }
+
+    .btn-lg {
+        font-size: 9px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .scoreboard h1 {
+        font-size: 12px;
+    }
+
+    .startButton a {
+        padding: 5px 2px;
+        font-size: 10px;
+    }
+
+    .startButton:nth-of-type(2) a {
+        padding: 5px 6px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 247px) {
+    .scoreboard h1 {
+        font-size: 10px;
+    }
+
+    .scoreboard p {
+        font-size: 10px;
+    }
+}

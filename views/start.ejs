@@ -1,0 +1,15 @@
+<%- include("partials/header") %>
+
+
+    <div class="questionDash">
+        <p><%= question %></p>
+        <form action="/trivia/start" method="post">
+            <% for(let i = 0; i < options.length; i++){ %>
+                    <input type="radio" name="selected" id="<%= options[i].letter %>" value="<%= options[i].letter %>"><label for="<%= options[i].letter %>" id="option"><%= options[i].letter %>. <%= options[i].body %></label><br>
+            <% } %>
+                <button class="btn btn-secondary">Next</button>
+        </form>
+    </div>>
+
+
+<%- include("partials/footer") %>
