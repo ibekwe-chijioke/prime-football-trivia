@@ -1,2 +1,2 @@
 # prime-football-trivia
-Football quiz web app
+Football quiz web app to test your football knowledge.
