@@ -11,7 +11,15 @@ let   questionNumber,
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
-mongoose.connect("mongodb://localhost/prime_football_trivia", {
+
+// mongoose.connect("mongodb://localhost/prime_football_trivia", {
+// 	useNewUrlParser: true,
+// 	useUnifiedTopology: true,
+// 	useFindAndModify: false,
+// 	useCreateIndex: true
+// });
+
+mongoose.connect("mongodb+srv://ibekwe-chijioke:Kingsley1@cluster0.f63n3.mongodb.net/prime-football-trivia?retryWrites=true&w=majority", {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
 	useFindAndModify: false,
@@ -33,9 +41,9 @@ const Question = mongoose.model("Question", questionSchema);
 const Player = mongoose.model("Player", playerSchema);
 
 // Question.create({
-// 	question: "Who was the only player to miss in the 2006 World Cup finals penalty shoot-out?",
-// 	options: [{body: "Claude Makelele", letter: "A"}, {body: "Patrick Vieira", letter: "B"},
-// 			 {body: "Florent Malouda", letter: "C"}, {body: "David Trezeguet", letter: "D"}],
+// 	question: "Which country did Spain beat in the finals of the 2010 World Cup to lift the trophy?",
+// 	options: [{body: "Uruguay", letter: "A"}, {body: "Germany", letter: "B"},
+// 			 {body: "Brazil", letter: "C"}, {body: "Netherland", letter: "D"}],
 // 	answer: "D"
 // }, function(err, question){
 // 	if(err){
